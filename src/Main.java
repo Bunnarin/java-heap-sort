@@ -12,8 +12,7 @@ import java.util.Random;
 
 public class Main {
 
-    // Fixed seeds so every run is reproducible and every algorithm sees the
-    // exact same input for a given dataset size.
+    // Fixed seeds so every run is reproducible
     private static final long BASE_SEED = 42L;
 
     public static void main(String[] args) throws IOException {
@@ -87,7 +86,7 @@ public class Main {
                 throw new IllegalArgumentException("Unknown algorithm: " + name);
         }
 
-        String filename = "output/" + name + "_sort_" + "n=" + original.length + "_output.txt";
+        String filename = "output/" + name + "_sort_" + original.length + ".txt";
         saveArrayToFile(arr, filename);
 
         return m;

@@ -8,21 +8,17 @@ public class SortMetrics {
 
     public String algorithmName;
     public long comparisons = 0;
-    public long swaps = 0; // swaps for Bubble/Selection/Heap, element movements for Insertion
+    public long swaps = 0;
     public long runtimeNanos = 0;
 
     public SortMetrics(String algorithmName) {
         this.algorithmName = algorithmName;
     }
 
-    public double getRuntimeMillis() {
-        return runtimeNanos / 1_000_000.0;
-    }
-
     @Override
     public String toString() {
         return String.format(
                 "%-16s | Comparisons: %,13d | Swaps/Movements: %,13d | Runtime: %,12.3f ms",
-                algorithmName, comparisons, swaps, getRuntimeMillis());
+                algorithmName, comparisons, swaps, runtimeNanos / 1_000_000.0);
     }
 }

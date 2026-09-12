@@ -1,0 +1,22 @@
+=== Sorting Algorithm Performance Report ===
+Algorithm under study: Heap Sort
+Compared against: Bubble Sort, Selection Sort, Insertion Sort
+
+---- Dataset: small (n = 5) ----
+Heap Sort        | Comparisons:            11 | Swaps/Movements:             9 | Runtime:        0.008 ms
+Bubble Sort      | Comparisons:             9 | Swaps/Movements:             5 | Runtime:        0.003 ms
+Selection Sort   | Comparisons:            10 | Swaps/Movements:             3 | Runtime:        0.003 ms
+Insertion Sort   | Comparisons:             9 | Swaps/Movements:             5 | Runtime:        0.002 ms
+
+---- Dataset: medium (n = 1000) ----
+Heap Sort        | Comparisons:        16,823 | Swaps/Movements:         9,061 | Runtime:        0.489 ms
+Bubble Sort      | Comparisons:       499,247 | Swaps/Movements:       254,819 | Runtime:        4.816 ms
+Selection Sort   | Comparisons:       499,500 | Swaps/Movements:           993 | Runtime:        2.859 ms
+Insertion Sort   | Comparisons:       255,808 | Swaps/Movements:       254,819 | Runtime:        3.175 ms
+
+---- Dataset: large (n = 1000000) ----
+Heap Sort        | Comparisons:    36,793,156 | Swaps/Movements:    19,047,414 | Runtime:      174.800 ms
+Bubble Sort      | Comparisons: 499,997,913,129 | Swaps/Movements: 249,994,900,454 | Runtime: 2,015,715.010 ms
+Selection Sort   | Comparisons: 499,999,500,000 | Swaps/Movements:       999,982 | Runtime:  645,417.033 ms
+Insertion Sort   | Comparisons: 249,995,900,440 | Swaps/Movements: 249,994,900,454 | Runtime:  364,098.644 ms
+
